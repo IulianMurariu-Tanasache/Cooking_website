@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persoane>
+    <persoana id="1">
+        <nume>Popescu</nume>
+        <prenume>Ion</prenume>
+        <varsta>23</varsta>
+        <adresa>
+            <strada>Strazilor</strada>
+            <numar>11</numar>
+            <localitate>Iasi</localitate>
+            <judet>Iasi</judet>
+            <tara>Romania</tara>
+        </adresa>
+        <studii>liceu</studii>
+        <CNP>1010123456789</CNP>
+        <telefon>0789456123</telefon>
+    </persoana>
+    <persoana id="2">
+        <nume>Georgescu</nume>
+        <prenume>Nelu</prenume>
+        <varsta>28</varsta>
+        <adresa>
+            <strada>Khcuwbaba</strada>
+            <numar>69</numar>
+            <localitate>Kigali</localitate>
+            <judet>Kigali</judet>
+            <tara>Rwanda</tara>
+        </adresa>
+        <studii>master</studii>
+        <CNP>5000145236554</CNP>
+        <telefon>0712123395</telefon>
+    </persoana>
+    <persoana id="3">
+        <nume>Mere</nume>
+        <prenume>Ana</prenume>
+        <varsta>25</varsta>
+        <adresa>
+            <strada>Principala</strada>
+            <numar>2</numar>
+            <localitate>Belcesti</localitate>
+            <judet>Iasi</judet>
+            <tara>Romania</tara>
+        </adresa>
+        <studii>licenta</studii>
+        <CNP>7011245638749</CNP>
+        <telefon>0788974561</telefon>
+    </persoana>
+</persoane>
