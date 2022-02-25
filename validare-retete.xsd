@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="retete">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="reteta" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="nume" type="xs:string" />
+                        <xs:element name="poza" type="xs:string" />
+                        <xs:element name="timp" type="xs:string" />
+                        <xs:element name="portie" type="xs:integer" />
+                        <xs:element name="ingrediente">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="ingredient" maxOccurs="unbounded">
+                                        <xs:complexType>
+                                            <xs:all>
+                                                <xs:element name="nume" type="xs:string"/>
+                                                <xs:element name="cantitate" type="xs:string"/>
+                                            </xs:all>
+                                            <xs:attribute name="optional" default="false" />
+                                        </xs:complexType>
+                                    </xs:element>
+                                    <xs:element name="condiment" maxOccurs="unbounded">
+                                        <xs:complexType>
+                                            <xs:simpleContent>
+                                                <xs:extension base="xs:string">
+                                                    <xs:attribute name="optional" default="false" />
+                                                </xs:extension>
+                                            </xs:simpleContent>
+                                         </xs:complexType>
+                                    </xs:element>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="preparare" type="xs:string" />
+                    </xs:sequence>
+                    <xs:attribute name = "id" use="required" />
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+</xs:schema>

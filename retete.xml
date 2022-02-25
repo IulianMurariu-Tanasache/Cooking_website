@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<retete>
+    <reteta id="1">
+        <nume>Orez blana bomba</nume>
+        <poza>poza1</poza>
+        <timp>1 ora si 30 minute</timp>
+        <portie>1</portie>
+        <ingrediente>
+            <ingredient>
+                <nume>orez</nume>
+                <cantitate>85g</cantitate>
+            </ingredient>
+            <ingredient>
+                <nume>ceapa</nume>
+                <cantitate>jumatate</cantitate>
+            </ingredient>
+            <ingredient>
+                <nume>ardei gras</nume>
+                <cantitate>jumatate</cantitate>
+            </ingredient>
+            <ingredient>
+                <nume>morcov</nume>
+                <cantitate>1</cantitate>
+            </ingredient>
+            <ingredient>
+                <nume>ciuperci</nume>
+                <cantitate>3-4</cantitate>
+            </ingredient>
+            <ingredient optional="true">
+                <nume>carne</nume>
+                <cantitate>depinde, sa fie putin</cantitate>
+            </ingredient>
+            <condiment>boia dulce</condiment>
+            <condiment>sos soya</condiment>
+            <condiment>oregano</condiment>
+            <condiment optional="true">sos rosii iute</condiment>
+        </ingrediente> 
+        <preparare>
+            Pentru început, orezul trebuie spălat și lăsat la înmuiat în jur de jumătate de oră. Între timp, putem tăia legumelele, în bucățele mici, dar nu tocate.
+            Într-o oală, punem puțin ulei unde vom căli legumele pentru maxim 10 minute, la foc mediu.
+            După ce călim legumele, adăugăm apă și orezul. Adăugăm condimentele și punem la foc mare pentru a fierbe.
+            Doar lăsăm să fiarbă orezul până rămâne fără apă, având grijă să amestecăm orezul ca să nu se prindă.
+        </preparare>
+    </reteta>
+
+    <reteta id="2">
+        <nume>Taietei stil indian</nume>
+        <poza>poza2</poza>
+        <timp>1 ora si 15 minute</timp>
+        <portie>1</portie>
+        <ingrediente>
+            <ingredient>
+                <nume>taietei</nume>
+                <cantitate>85g</cantitate>
+            </ingredient>
+            <ingredient>
+                <nume>ceapa</nume>
+                <cantitate>jumatate</cantitate>
+            </ingredient>
+            <ingredient>
+                <nume>ardei gras</nume>
+                <cantitate>jumatate</cantitate>
+            </ingredient>
+            <ingredient>
+                <nume>morcov</nume>
+                <cantitate>1</cantitate>
+            </ingredient>
+            <ingredient>
+                <nume>ciuperci</nume>
+                <cantitate>3-4</cantitate>
+            </ingredient>
+            <ingredient optional="true">
+                <nume>carne</nume>
+                <cantitate>depinde, sa fie putin</cantitate>
+            </ingredient>
+            <condiment>boia dulce</condiment>
+            <condiment>curry</condiment>
+            <condiment>sos soya</condiment>
+            <condiment>oregano</condiment>
+            <condiment optional="true">sos rosii iute</condiment>
+        </ingrediente> 
+        <preparare>
+            Fierbem tăieței în apă cu sare și foarte puțin ulei până încep să se dezmorțească și să se înmoaie. Apoi se scurg și se clătessc în apă rece (pentru ca să nu se înmoaie mai tare). Pentru ca să nu se prindă cât stau, punem puțin ulei în tăieței.
+            Pregătim legumele: le tăiem în bucățele mici, dar nu tocate, apoi le punem în tigaie la foc mic și le călim cu niște sare. Cînd încep să se rumenească, adăugăm tăiețeii și condimentele.
+            Amestecăm bine continuu, la foc mediu. Verificăm tăiețeii ca să ne dăm seama când este gata.
+        </preparare>
+    </reteta>
+
+    <reteta id="3">
+        <nume>Ciuperci cu ce găsim</nume>
+        <poza>poza3</poza>
+        <timp>30 minute</timp>
+        <portie>1</portie>
+        <ingrediente>
+            <ingredient>
+                <nume>ciuperci</nume>
+                <cantitate>6-8</cantitate>
+            </ingredient>
+            <ingredient>
+                <nume>tofu</nume>
+                <cantitate>jumatate</cantitate>
+            </ingredient>
+            <ingredient>
+                <nume>ciuperci</nume>
+                <cantitate>3-4</cantitate>
+            </ingredient>
+            <ingredient>
+                <nume>murături</nume>
+                <cantitate>1-3</cantitate>
+            </ingredient>
+            <ingredient optional="true">
+                <nume>carne</nume>
+                <cantitate>depinde ce găsim, chiftelele merg bine</cantitate>
+            </ingredient>
+            <ingredient optional="true">
+                <nume>ce se mai găsește</nume>
+                <cantitate>cât se mai găsește</cantitate>
+            </ingredient>
+            <condiment>sos soya</condiment>
+            <condiment>oregano</condiment>
+            <condiment>sos rosii</condiment>
+        </ingrediente> 
+        <preparare>
+            Într-o tigaie punem ciupercile tăiate în bucăți mari cu puțin ulei și mult sos de soya. Punem și condimentele și sosul de roșii. Presăm cuipercile ca să iasă și să fiarbă în sucul lor propriu.
+            Pe parcurs adăugăm și tofu și ce mai este la îndemână. Servim alături de murături.
+        </preparare>
+    </reteta>
+</retete>
