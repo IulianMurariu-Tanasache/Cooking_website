@@ -38,6 +38,14 @@ nav>a {
     align-items: center;
 }
 
+.center-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
 .fieldset-div {
     display: flex;
 }
@@ -92,6 +100,50 @@ fieldset>div {
 
 footer {
     position: sticky;
-    bottom: 1px;
+    bottom: 0;
+}
+
+.in-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+aside {
+    display: flex;
+    width: fit-content;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(189, 183, 107);
+    margin: 0, 10px, 0, 10px;
+}
+
+aside>a {
+    color: purple;
+    width: fit-content;
+    padding: 3px;
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-color: purple;
+    border-style: solid;
+}
+
+aside>a:hover {
+    background-color: rgb(126, 122, 71);
+    color: rgb(54, 6, 117);
+    font-weight: bold;
+}
+
+#canvas-sec2 {
+    width: 400px;
+    height: 400px;
+    border: 1px;
+    border-style: solid;
+    border-color: gray;
 }
 

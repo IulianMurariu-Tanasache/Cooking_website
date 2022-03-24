@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Retete nebune de bucatarie
+        </title>
+        <link rel="stylesheet" type="text/css" href="css/stil.css"/>
+        <script src="js/script.js"></script>
+    </head>
+    <body onload="onload_display_info()">
+        <div class = "head-div">
+            <header>
+                <h1>
+                    Retete de bucatarie de la camin
+                </h1>
+            </header>
+            <nav>
+                <a href="index.html" >Acasa</a>
+                <a href="despre.html" >Despre</a>
+                <a href="inregistreaza.html" >Inregistreaza</a>
+                <a href="video.html" >Video</a>
+                <a href="desen.html" >Desen</a>
+                <a href="invat.html" class="nav-item">Invat</a>
+            </nav>
+        </div>
+        <main>
+            <div class="center-div">
+                <aside>
+                    <a href="#s1" >Sectiune 1: Info</a>
+                    <a href="#s2" >Sectiune 2: Desen</a>
+                    <a href="#s3" >Sectiune 3: TBD</a>
+                </aside>
+            </div>
+            <section id="s1">
+                <div>
+                    <p id="data-mea">dadada</p>
+                    <p id="locatia-mea"></p>
+                    <p id="url-meu"></p>
+                    <p id="browser-nume"></p>
+                    <p id="os-meu"></p>
+                </div>
+            </section>
+            <section id="s2">
+                <label for="Border color">Select border color:</label>
+                <input type="color" id="Border color" name="Border color" value="#ff0000">
+                <br>
+                <label for="Fill color">Select fill color:</label>
+                <input type="color" id="Fill color" name="Fill color" value="#ff0000">
+                <br>
+                <canvas id="canvas-sec2" onclick="onclick_canvas(event)">
+
+                </canvas>
+            </section>
+        </main>
+        <br>
+        <footer>
+            &copy;2022 Retete de bucatarie de la camin
+        </footer>
+    </body>
+</html>
