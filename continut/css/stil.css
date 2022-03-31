@@ -20,12 +20,18 @@ nav>a {
     border-color: blueviolet;
     border-style: ridge;
     width: fit-content;
-
     text-decoration: none;
     background-color: rgb(226, 208, 228);
     color:darkviolet;
     padding: 10px;
     text-align: center;
+}
+
+nav>a:hover {
+    background-color: rgb(231, 177, 213);
+    color: blue;
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 .head-div {
@@ -38,7 +44,7 @@ nav>a {
     align-items: center;
 }
 
-.center-div {
+.center-div, .centered-form {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -46,26 +52,11 @@ nav>a {
     align-items: center;
 }
 
-.fieldset-div {
+.flex-div {
     display: flex;
 }
 
-nav>a:hover {
-    background-color: rgb(231, 177, 213);
-    color: blue;
-    text-decoration: underline;
-    font-weight: bold;
-}
-
-form {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-}
-
-form>label {
+form>label, .center-div>label {
     font-weight: bolder;
     font-size: larger;
 }
@@ -99,7 +90,7 @@ fieldset>div {
 }
 
 footer {
-    position: sticky;
+    position: fixed;
     bottom: 0;
 }
 
@@ -146,4 +137,37 @@ aside>a:hover {
     border-style: solid;
     border-color: gray;
 }
+
+.fieldset-div {
+    border: 1px solid #ddd;
+    margin-top: 1em;
+    width: fit-content;
+    text-align: center;
+}
+
+
+.fieldset h1 {
+    font-size: 12px;
+    text-align: center;
+  }
+  
+  .fieldset h1 span {
+    display: inline;
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: 5px 10px;
+    position: relative;
+    top: -1.3em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+
+  /* .fieldset-div p {
+      border: 1px solid #5c1162;
+      width: fit-content;
+      text-align: center;
+  } */
 
