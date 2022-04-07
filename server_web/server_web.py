@@ -65,26 +65,6 @@ def get_content_of_file(path, gzip_compress):
     return content ,tip
 
 
-# def handle_clients():
-#     global list_clienti, server_on
-#     while server_on:
-#         if len(list_clienti) == 0:
-#             continue
-#         try:
-#             to_read, _, _ = select.select(list_clienti, [], [], 1)
-#         except:
-#             continue
-#         for client in to_read:
-#             try:
-#                 print(f'Se proceseaza cererea clientului {client.addr}')
-#                 handle_client(client.conn)
-#             except Exception as e:
-#                 print(e)
-#                 try:
-#                     client[0].close()
-#                 finally:
-#                    break
-
 def handle_client(client):
     global list_clienti
     clientsocket = client.conn
@@ -113,14 +93,16 @@ def handle_client(client):
             dir_name += '\css'
         if '.js' in file_name:
             dir_name += '\js'
+        if '.xml' in  file_name:
+            dir_name += '\\resurse'
         for file in os.listdir(dir_name):
             if file == file_name:
                 find_file = True
                 file_abs_path = dir_name + "\\" + file
                 break
         if not find_file:
-            raspuns_http = asamblare_raspuns(404, None, 'text')
             # 404 NotFound
+            raspuns_http = asamblare_raspuns(404, None, 'text', gzip_accepted=False)
         else:
             gzip_use = 'gzip' in cerere
             content, tip = get_content_of_file(file_abs_path, gzip_compress=gzip_use)
@@ -129,7 +111,8 @@ def handle_client(client):
             print('raspuns: ' + raspuns_http)
     # TODO trimiterea răspunsului HTTP
         clientsocket.sendall(bytes(raspuns_http, encoding='utf-8'))
-        clientsocket.sendall(content)
+        if find_file:
+            clientsocket.sendall(content)
     client.conn.close()
 
 def listen(server_on, list_clienti, serversocket):

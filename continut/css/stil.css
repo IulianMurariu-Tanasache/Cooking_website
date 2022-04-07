@@ -171,3 +171,15 @@ aside>a:hover {
       text-align: center;
   } */
 
+  .border-div {
+      border: 3px solid rgb(229, 170, 233);
+      width: fit-content;
+      padding: 5px;
+      margin: 5px;
+  }
+
+  .cel-mai-bun-span {
+      font-weight: bold;
+      font-style: oblique;
+  }
+

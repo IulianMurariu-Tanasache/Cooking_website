@@ -1,137 +1,104 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            Retete nebune de bucatarie
-        </title>
-        <link rel="stylesheet" type="text/css" href="css/stil.css"/>
-        <script src="js/script.js"></script>
-    </head>
-    <body>
-        <div class="head-div">
-            <header>
-                <h1>
-                    Rețete de bucătărie de la cămin
-                </h1>
-            </header>
-            <nav>
-                <a href="index.html" >Acasă</a>
-                <a href="despre.html" >Despre</a>
-                <a href="inregistreaza.html" >Înregistrează</a>
-                <a href="video.html" >Video</a>
-                <a href="desen.html" >Desen</a>
-                <a href="invat.html" class="nav-item">Învăț</a>
-            </nav>
-        </div>
-        <main>
-            <h3>
-                Rețete de bucătărie de cămin descrise in detaliu
-            </h3>
-            <div>
-                <p>
-                    Să gătești poate fi o activitate foarte creativă atunci când încerci să fii creativ, adaptându-te la stilul de viață studențesc.
-                    <br>
-                    <b> Rețetele de bucătărie</b> prezentate pe acest site sunt <em>unice</em> și <em>perfecte pentru viața de cămin.</em>. 
-                    <br>
-                </p>
-            </div>
-            <div>
-                <p>
-                    O rețetă favorită de a mea este aceasta: <a href="https://natashaskitchen.com/chicken-stir-fry-recipe/">Pui dulce la tigaie</a>.
-                    <br>
-                    <img src="pui-dulce.jpg" alt="Pui dulce la tigaie" width="220" height="300">
-                    <br>
-                    <code>Cât de delicios arată</code>
-                    <br>
-                </p>
-            </div>
-            <div>
-                <br>
-                <p>
-                    Un exemplu de cum este prezentată o rețetă:
-                </p>
-                <table border="1">
-                    <tr>
-                        <th>
-                            Nume rețetă
-                        </th>
-                        <th>
-                            Timp de preparare
-                        </th>
-                        <th>
-                            Dificultate
-                        </th>
-                    </tr>
-                    <tr>
-                        <td>
-                            Pui dulce la tigaie
-                        </td>
-                        <td>
-                            1 oră și 30 de minute
-                        </td>
-                        <td>
-                            mediu
-                        </td>
-                    </tr>
-                </table>
-                <br>
-            </div>
-            <p>
-                <br>
-                Pentru a primi informații legate de cât mai multe rețete sau dacă vreți să lăsați un comentariu/sugestie, puteți completa formularul:
-                <br>
-            </p>
-            <form action="./form">
-                <fieldset>
-                    <legend>Formular:</legend>
-                    <label>Nume: </label> 
-                    <input type="text" id="nume" name="nume">
-                    <br>
-                    <label>Prenume: </label> 
-                    <input type="text" id="prenume" name="prenume">
-                    <br>
-                    <label>Adresa de email: </label> 
-                    <input type="text" id="email" name="email">
-                    <br>
-                    <label>Cometarii / sugestii de rețete </label>
-                    <br>
-                    <textarea id="retete-noi" name="retete-noi" rows="4" cols="50"></textarea>
-                    <br>
-                    <label>Vrei să primești informații despre cele mai noi rețete?</label>
-                    <select name="info" id="info">
-                        <option value="info-da">DA</option>
-                        <option value="info-nu">NU</option>
-                        </select>
-                    <br>
-                    <label>Sunt de acord cu prelucrarea datelor sau ceva de genu</label>
-                    <input type="checkbox" id="acord" name="acord">
-                    <br>
-                    <button type="button">Trimite</button>
-                </fieldset>
-            </form>
-            <p>
-                <br>
-                Cele mai populare rețete:
-            </p>
-                <ul>
-                    <li>Orez prăjit</li>
-                    <li>Orez fiert</li>
-                    <li>Tăieței în stil indian</li>
-                    <li>Ciuperci la tigaie</li>
-                    <li>Pui dulce la tigaie</li>
-                </ul>
-            <p>
-                <br>
-                Un alt site de retete de unde mă <em>inspir</em>:
-                <br>
-                <iframe src="https://www.delicious.com.au/" title="alt-site" width="1200" height="720"></iframe>
-            </p>
-        </main>
-        <br>
-        <footer>
-            &copy;2022 Rețete de bucătărie de la cămin.
+<main>
+    <h3>
+        Rețete de bucătărie de cămin descrise in detaliu
+    </h3>
+    <div>
+        <p>
+            Să gătești poate fi o activitate foarte creativă atunci când încerci să fii creativ, adaptându-te la stilul de viață studențesc.
             <br>
-            Murariu-Tănăsache Iulian 1311A
-        </footer>
-    </body>
-</html>
+            <b> Rețetele de bucătărie</b> prezentate pe acest site sunt <em>unice</em> și <em>perfecte pentru viața de cămin.</em>. 
+            <br>
+        </p>
+    </div>
+    <div>
+        <p>
+            O rețetă favorită de a mea este aceasta: <a href="https://natashaskitchen.com/chicken-stir-fry-recipe/">Pui dulce la tigaie</a>.
+            <br>
+            <img src="pui-dulce.jpg" alt="Pui dulce la tigaie" width="220" height="300">
+            <br>
+            <code>Cât de delicios arată</code>
+            <br>
+        </p>
+    </div>
+    <div>
+        <br>
+        <p>
+            Un exemplu de cum este prezentată o rețetă:
+        </p>
+        <table border="1">
+            <tr>
+                <th>
+                    Nume rețetă
+                </th>
+                <th>
+                    Timp de preparare
+                </th>
+                <th>
+                    Dificultate
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    Pui dulce la tigaie
+                </td>
+                <td>
+                    1 oră și 30 de minute
+                </td>
+                <td>
+                    mediu
+                </td>
+            </tr>
+        </table>
+        <br>
+    </div>
+    <p>
+        <br>
+        Pentru a primi informații legate de cât mai multe rețete sau dacă vreți să lăsați un comentariu/sugestie, puteți completa formularul:
+        <br>
+    </p>
+    <form action="./form">
+        <fieldset>
+            <legend>Formular:</legend>
+            <label>Nume: </label> 
+            <input type="text" id="nume" name="nume">
+            <br>
+            <label>Prenume: </label> 
+            <input type="text" id="prenume" name="prenume">
+            <br>
+            <label>Adresa de email: </label> 
+            <input type="text" id="email" name="email">
+            <br>
+            <label>Cometarii / sugestii de rețete </label>
+            <br>
+            <textarea id="retete-noi" name="retete-noi" rows="4" cols="50"></textarea>
+            <br>
+            <label>Vrei să primești informații despre cele mai noi rețete?</label>
+            <select name="info" id="info">
+                <option value="info-da">DA</option>
+                <option value="info-nu">NU</option>
+                </select>
+            <br>
+            <label>Sunt de acord cu prelucrarea datelor sau ceva de genu</label>
+            <input type="checkbox" id="acord" name="acord">
+            <br>
+            <button type="button">Trimite</button>
+        </fieldset>
+    </form>
+    <p>
+        <br>
+        Cele mai populare rețete:
+    </p>
+        <ul>
+            <li>Orez prăjit</li>
+            <li>Orez fiert</li>
+            <li>Tăieței în stil indian</li>
+            <li>Ciuperci la tigaie</li>
+            <li>Pui dulce la tigaie</li>
+        </ul>
+    <p>
+        <br>
+        Un alt site de retete de unde mă <em>inspir</em>:
+        <br>
+        <iframe src="https://www.delicious.com.au/" title="alt-site" width="1200" height="720"></iframe>
+    </p>
+</main>

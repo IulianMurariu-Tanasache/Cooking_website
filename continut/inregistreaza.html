@@ -1,102 +1,69 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            Rețete nebune de bucătărie
-        </title>
-        <link rel="stylesheet" type="text/css" href="css/stil.css"/>
-        <script src="js/script.js"></script>
-    </head>
-    <body>
-        <div class = "head-div">
-            <header>
-                <h1>
-                    Rețete de bucătărie de la cămin
-                </h1>
-            </header>
-            <nav>
-                <a href="index.html" >Acasă</a>
-                <a href="despre.html" >Despre</a>
-                <a href="inregistreaza.html" >Înregistrează</a>
-                <a href="video.html" >Video</a>
-                <a href="desen.html" >Desen</a>
-                <a href="invat.html" class="nav-item">Învăț</a>
-            </nav>
-        </div>
-        <main>
-            <div class="center-div">
-                <form action="/action_page.php">
-                    <br>
-                    <div class="center-div">
-                        <label>Înregistrează-te:</label>
-                    </div>
-                    <br>
-                    <div class="flex-div">
-                        <fieldset id="primul-fieldset">
-                            <legend>Informații generale:</legend>
-                            <div>
-                                <label for="username">Nume utilizator:</label>
-                                <input type="text" id="username" name="username">
-                            </div>
-                            <div>
-                                <label for="parola">Parola:</label>
-                                <input type="password" id="parola" name="parola">
-                            </div>
-                            <div>
-                            <label for="nume">Nume:</label>
-                            <input type="nume" id="nume" name="nume">
-                            </div>
-                            <div>
-                            <label for="prenume">Prenume:</label>
-                            <input type="text" id="prenume" name="prenume">
-                            </div>
-                            <div>
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email">
-                            </div>
-                            <div>
-                            <label for="tel">Telefon:</label>
-                            <input type="tel" id="tel" name="tel" pattern="07[0-9]{2}\.[0-9]{6}">
-                            </div>
-                        </fieldset>
-                        <fieldset>
-                            <legend>Informații personale:</legend>
-                            <label for="camin">Stai la cămin?:</label>
-                            <select name="camin" id="camin">
-                                <option value="DA">DA</option>
-                                <option value="NU">NU</option>
-                            </select><br><br>
-                            <label for="reteta">Rețeta preferată:</label>
-                            <input list="retete" name="retetele" id="retetele"/>
-                            <datalist id="retete">
-                                <option value="Orez">
-                                <option value="Orez prăjit">
-                                <option value="Tăieței in stil indian">
-                                <option value="Pui dulce">
-                            </datalist><br><br>
-                            <!-- <label for="culoare">Culoarea preferată:</label>
-                            <input type="color" id="culoare" name="culoare"><br><br> -->
-                            <label for="data">Data nașterii:</label>
-                            <input type="date" id="data" name="data"><br><br>
-                            <label for="ora">Ora la care gătești cel mai mult:</label>
-                            <input type="time" id="ora" name="ora"><br><br>
-                            <label for="skill">Aptitudini culinare:</label>
-                            <input type="range" id="skill" name="skill" min="0" max="100"><br><br>
-                            <label for="pagina">Pagina personală:</label>
-                            <input type="url" id="pagina" name="pagina"><br><br>
-                            <label for="comm">Cometarii/sugestii:</label><br>
-                            <textarea id="comm" name="comm" rows="4" cols="50">Acesta este site-ul meu preferat.</textarea><br><br>
-                        </fieldset>
-                    </div>
-                    <input id="inregInput" type="submit" value="Înregistrează">
-                </form>
-              </div>
-        </main>
-        <br>
-        <footer>
-            &copy;2022 Rețete de bucătărie de la cămin.
+<main>
+    <div class="center-div">
+        <form action="/action_page.php">
             <br>
-            Murariu-Tănăsache Iulian 1311A
-        </footer>
-    </body>
-</html>
+            <div class="center-div">
+                <label>Înregistrează-te:</label>
+            </div>
+            <br>
+            <div class="flex-div">
+                <fieldset id="primul-fieldset">
+                    <legend>Informații generale:</legend>
+                    <div>
+                        <label for="username">Nume utilizator:</label>
+                        <input type="text" id="username" name="username">
+                    </div>
+                    <div>
+                        <label for="parola">Parola:</label>
+                        <input type="password" id="parola" name="parola">
+                    </div>
+                    <div>
+                    <label for="nume">Nume:</label>
+                    <input type="nume" id="nume" name="nume">
+                    </div>
+                    <div>
+                    <label for="prenume">Prenume:</label>
+                    <input type="text" id="prenume" name="prenume">
+                    </div>
+                    <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    </div>
+                    <div>
+                    <label for="tel">Telefon:</label>
+                    <input type="tel" id="tel" name="tel" pattern="07[0-9]{2}\.[0-9]{6}">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Informații personale:</legend>
+                    <label for="camin">Stai la cămin?:</label>
+                    <select name="camin" id="camin">
+                        <option value="DA">DA</option>
+                        <option value="NU">NU</option>
+                    </select><br><br>
+                    <label for="reteta">Rețeta preferată:</label>
+                    <input list="retete" name="retetele" id="retetele"/>
+                    <datalist id="retete">
+                        <option value="Orez">
+                        <option value="Orez prăjit">
+                        <option value="Tăieței in stil indian">
+                        <option value="Pui dulce">
+                    </datalist><br><br>
+                    <!-- <label for="culoare">Culoarea preferată:</label>
+                    <input type="color" id="culoare" name="culoare"><br><br> -->
+                    <label for="data">Data nașterii:</label>
+                    <input type="date" id="data" name="data"><br><br>
+                    <label for="ora">Ora la care gătești cel mai mult:</label>
+                    <input type="time" id="ora" name="ora"><br><br>
+                    <label for="skill">Aptitudini culinare:</label>
+                    <input type="range" id="skill" name="skill" min="0" max="100"><br><br>
+                    <label for="pagina">Pagina personală:</label>
+                    <input type="url" id="pagina" name="pagina"><br><br>
+                    <label for="comm">Cometarii/sugestii:</label><br>
+                    <textarea id="comm" name="comm" rows="4" cols="50">Acesta este site-ul meu preferat.</textarea><br><br>
+                </fieldset>
+            </div>
+            <input id="inregInput" type="submit" value="Înregistrează">
+        </form>
+        </div>
+</main>
