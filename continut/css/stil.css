@@ -12,7 +12,7 @@ nav {
     border-style: ridge;
     width: fit-content;
 }
- 
+
 nav>a {
     border-top-width: 0px;
     border-bottom-width: 0px;
@@ -69,7 +69,7 @@ form>label, .center-div>label {
 
 legend {
     font-weight: bold;
-    
+
 }
 
 fieldset {
@@ -149,9 +149,9 @@ aside>a:hover {
 .fieldset h1 {
     font-size: 12px;
     text-align: center;
-  }
-  
-  .fieldset h1 span {
+}
+
+.fieldset h1 span {
     display: inline;
     border: 1px solid #ddd;
     background: #fff;
@@ -163,23 +163,27 @@ aside>a:hover {
     flex-direction: column;
     align-content: center;
     align-items: center;
-  }
+}
 
-  /* .fieldset-div p {
-      border: 1px solid #5c1162;
-      width: fit-content;
-      text-align: center;
-  } */
+.border-div  {
+    border: 3px solid rgb(229, 170, 233);
+    width: fit-content;
+    padding: 5px;
+    margin: 5px;
+}
 
-  .border-div {
-      border: 3px solid rgb(229, 170, 233);
-      width: fit-content;
-      padding: 5px;
-      margin: 5px;
-  }
+.cel-mai-bun-span {
+    font-weight: bold;
+    font-style: oblique;
+}
 
-  .cel-mai-bun-span {
-      font-weight: bold;
-      font-style: oblique;
-  }
+.click-span {
+    color: rgb(87, 0, 13);
+}
+
+.click-span:hover {
+    color: rgb(5, 10, 160);
+    font-weight: bold;
+    text-decoration: underline;
+}
 

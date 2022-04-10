@@ -70,5 +70,9 @@ function schimbaContinut(resursa, jsFisier, jsFunctie){
             }
         xhttp.open("GET",resursa);
         xhttp.send();
+        xhttp = new XMLHttpRequest();
+        xhttp.open("GET","stil.css");
+        xhttp.send();
+        console.log("stil cerut")
     }
 }
