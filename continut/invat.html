@@ -6,7 +6,7 @@
             <a href="#s2" >Sectiune 2: Desen</a>
             <a href="#s3" >Sectiune 3: TBD</a>
         </aside>
-        <section id="s1">
+        <section id="s1" onload="onload_display_info()">
             <div class="fieldset-div">
                 <h1><span>Detalli furate din calculatorul tău</span></h1><br>
                 <p><b>Date: </b></p><p id="data-mea">dadada</p><br>
@@ -19,12 +19,12 @@
     </div>
     <section id="s2">
         <label for="Border color">Select border color:</label>
-        <input type="color" id="Border color" name="Border color" value="#ff0000">
+        <input type="color" id="Border-color" name="Border color" value="#ff0000">
         <br>
         <label for="Fill color">Select fill color:</label>
-        <input type="color" id="Fill color" name="Fill color" value="#ff0000">
+        <input type="color" id="Fill-color" name="Fill color" value="#ff0000">
         <br>
-        <canvas id="canvas-sec2" onclick="onclick_canvas(event)">
+        <canvas id="canvas-sec2" width=400 height=400 onclick="onclick_canvas(event)">
 
         </canvas>
     </section>

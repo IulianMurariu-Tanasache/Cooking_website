@@ -13,25 +13,33 @@ nav {
     width: fit-content;
 }
 
-nav>a {
-    border-top-width: 0px;
-    border-bottom-width: 0px;
-    border-width: 1px;
-    border-color: blueviolet;
-    border-style: ridge;
-    width: fit-content;
-    text-decoration: none;
-    background-color: rgb(226, 208, 228);
-    color:darkviolet;
-    padding: 10px;
-    text-align: center;
+@media screen {
+    nav>a {
+        border-top-width: 0px;
+        border-bottom-width: 0px;
+        border-width: 1px;
+        border-color: blueviolet;
+        border-style: ridge;
+        width: fit-content;
+        text-decoration: none;
+        background-color: rgb(226, 208, 228);
+        color:darkviolet;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    nav>a:hover {
+        background-color: rgb(231, 177, 213);
+        color: blue;
+        text-decoration: underline;
+        font-weight: bold;
+    }
 }
 
-nav>a:hover {
-    background-color: rgb(231, 177, 213);
-    color: blue;
-    text-decoration: underline;
-    font-weight: bold;
+@media (max-resolution: 1ddpx)  {
+    p, span, h3, div {
+        font-size: small;
+    }
 }
 
 .head-div {
@@ -131,8 +139,6 @@ aside>a:hover {
 }
 
 #canvas-sec2 {
-    width: 400px;
-    height: 400px;
     border: 1px;
     border-style: solid;
     border-color: gray;
@@ -187,3 +193,34 @@ aside>a:hover {
     text-decoration: underline;
 }
 
+table {
+    border: 3px solid rgb(88, 1, 39);
+}
+
+table>tr,th,td {
+    border: 1px solid rgb(54, 6, 117);
+    width:fit-content;
+}
+
+#comm {
+    resize: none;
+}
+
+#pagina, #retetele {
+    white-space: nowrap;
+    width: 200px;
+    border: 1px solid #000000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#mask-clip {
+    text-align: center;
+    font-size: 6em;
+    font-family: arial;
+    background-image: url(/continut/imagini/ramsey.png) no-repeat;
+    background-clip: text;
+    color: #de466c;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

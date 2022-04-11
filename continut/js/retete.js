@@ -15,18 +15,20 @@ function incarcaRetete(){
                     headingRow.append(document.createElement('th').innerHTML = "Ingrediente");
                     headingRow.append(document.createElement('th').innerHTML = "Preparare");
                     table.append(headingRow)
+                    console.log(table)
 
                     for(let reteta of xmlDoc.getElementsByTagName('reteta')){
                         let currentRow = document.createElement('tr')
-                        currentRow.append(document.createElement('td').innerHTML = reteta.getElementByTagName('nume'))
-                        currentRow.append(document.createElement('td').innerHTML = reteta.getElementByTagName('poza'))
-                        currentRow.append(document.createElement('td').innerHTML = reteta.getElementByTagName('timp'))
-                        currentRow.append(document.createElement('td').innerHTML = reteta.getElementByTagName('portie'))
-                        currentRow.append(document.createElement('td').innerHTML = reteta.getElementByTagName('ingrediente'))
-                        currentRow.append(document.createElement('td').innerHTML = reteta.getElementByTagName('preparare'))
+                        console.log(reteta.getElementsByTagName('nume')[0])
+                        currentRow.appendChild(document.createElement('td').innerHTML = reteta.getElementsByTagName('nume')[0]);
+                        currentRow.appendChild(document.createElement('td').innerHTML = reteta.getElementsByTagName('poza')[0]);
+                        currentRow.appendChild(document.createElement('td').innerHTML = reteta.getElementsByTagName('timp')[0]);
+                        currentRow.appendChild(document.createElement('td').innerHTML = reteta.getElementsByTagName('portie')[0]);
+                        currentRow.appendChild(document.createElement('td').innerHTML = reteta.getElementsByTagName('ingrediente')[0]);
+                        currentRow.appendChild(document.createElement('td').innerHTML = reteta.getElementsByTagName('preparare')[0]);
                     }
 
-                    document.getElementById("continut").innerHTML = table;
+                    document.getElementById("continut").appendChild(table);
                 });
             }
         }

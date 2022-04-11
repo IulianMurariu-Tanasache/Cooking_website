@@ -17,8 +17,8 @@ function showPosition(position) {
     "<br>Longitude: " + position.coords.longitude;
 }
 
-let rect_first = null;
-let canvas_clicks = 0;
+var rect_first = null;
+var canvas_clicks = 0;
 
 function onclick_canvas(e) {
     canvas_clicks = canvas_clicks + 1;
@@ -31,12 +31,16 @@ function onclick_canvas(e) {
             let rect_second = [e.offsetX, e.offsetY];
             canvas_clicks = 0;
             let canvas_obj = document.getElementById("canvas-sec2");
-            let ctx = document.getElementById("canvas-sec2").getContext("2d");
-            console.log(rect_first);
-            console.log(rect_second);
+            let ctx = canvas_obj.getContext("2d");
+            let border_color = document.getElementById('Border-color').value;
+            let fill_color = document.getElementById('Fill-color').value;
             ctx.clearRect(0,0,canvas_obj.width,canvas_obj.height);
+            console.log(rect_first[1]);
+            console.log(rect_second[1]);
+            ctx.fillStyle = fill_color;
+            ctx.strokeStyle = border_color;
             ctx.fillRect(Math.min(rect_first[0], rect_second[0]), Math.min(rect_first[1], rect_second[1]), Math.abs(rect_first[0] - rect_second[0]), Math.abs(rect_first[1] - rect_second[1]));
-            //ctx.stroke();
+            ctx.strokeRect(Math.min(rect_first[0], rect_second[0]) - 1, Math.min(rect_first[1], rect_second[1]) - 1, Math.abs(rect_first[0] - rect_second[0]) + 1, Math.abs(rect_first[1] - rect_second[1]) + 1);
             rect_first = null;
             break;
     }
