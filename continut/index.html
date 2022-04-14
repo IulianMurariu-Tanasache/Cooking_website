@@ -7,8 +7,8 @@
         <link rel="stylesheet" type="text/css" href="css/stil.css"/>
         <script src="js/script.js"></script>
     </head>
-    <body>
-        <div class="head-div">
+    <body onload="schimbaContinut('acasa.html')">
+        <div class="head-div" id="banner">
             <header>
                 <h1>
                     Rețete de bucătărie de la cămin
@@ -17,11 +17,12 @@
             <nav>
                 <a onclick="schimbaContinut('acasa.html')">Acasă</a>
                 <a onclick="schimbaContinut('despre.html')">Despre</a>
-                <a onclick="schimbaContinut('inregistreaza.html')">Înregistrează</a>
+                <a onclick="schimbaContinut('inregistreaza.html','script.js','changeRange')">Înregistrează</a>
                 <a onclick="schimbaContinut('video.html')" >Video</a>
                 <a onclick="schimbaContinut('desen.html')" >Desen</a>
                 <a onclick="schimbaContinut('invat.html', 'script.js', 'onload_display_info')">Învăț</a>
                 <a onclick="schimbaContinut('retete.html','retete.js','incarcaRetete')">Retete</a>
+                <a onclick="schimbaContinut('cumparaturi.html','cumparaturi.js')">Cumparaturi</a>
             </nav>
         </div>
         <br>

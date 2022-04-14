@@ -90,11 +90,13 @@ def handle_client(client):
         file_abs_path = ""
         dir_name = root_dir
         if '.css' in file_name:
-            dir_name += '\css'
+            dir_name += '\\css'
         if '.js' in file_name:
-            dir_name += '\js'
+            dir_name += '\\js'
         if '.xml' in  file_name:
             dir_name += '\\resurse'
+        if '.jpg' in file_name or '.png' in file_name:
+            dir_name += '\\imagini'
         for file in os.listdir(dir_name):
             if file == file_name:
                 find_file = True

@@ -5,7 +5,6 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="validare-retete.xsd">
     <reteta id="1">
         <nume>Orez blana bomba</nume>
-        <poza>poza1</poza>
         <timp>1 ora si 30 minute</timp>
         <portie>1</portie>
         <ingrediente>
@@ -48,7 +47,6 @@ xsi:schemaLocation="validare-retete.xsd">
 
     <reteta id="2">
         <nume>Taietei stil indian</nume>
-        <poza>poza2</poza>
         <timp>1 ora si 15 minute</timp>
         <portie>1</portie>
         <ingrediente>
@@ -91,7 +89,6 @@ xsi:schemaLocation="validare-retete.xsd">
 
     <reteta id="3">
         <nume>Ciuperci cu ce găsim</nume>
-        <poza>poza3</poza>
         <timp>30 minute</timp>
         <portie>1</portie>
         <ingrediente>

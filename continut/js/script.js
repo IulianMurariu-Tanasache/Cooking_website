@@ -1,7 +1,9 @@
+var timer = null;
+
 function onload_display_info() {
     let url = window.location.href;
     window.navigator.geolocation.getCurrentPosition(showPosition);
-    setInterval(update_time, 1000);
+    timer = setInterval(update_time, 1000);
     document.getElementById("url-meu").innerHTML = url;
     document.getElementById("browser-nume").innerHTML = window.navigator.userAgent;
     document.getElementById("os-meu").innerHTML = window.navigator.platform
@@ -47,6 +49,11 @@ function onclick_canvas(e) {
 }
 
 function schimbaContinut(resursa, jsFisier, jsFunctie){
+    if(timer != null){
+        clearInterval(timer);
+        timer = null;
+    }
+    
     var xhttp;
     if (window.XMLHttpRequest) {
         xhttp = new XMLHttpRequest();
@@ -79,4 +86,10 @@ function schimbaContinut(resursa, jsFisier, jsFunctie){
         xhttp.send();
         console.log("stil cerut")
     }
+}
+
+function changeRange() {
+    var range = document.getElementById('skill');
+    var span = document.getElementById('eval-apt');
+    span.innerHTML = parseInt(range.value);
 }
