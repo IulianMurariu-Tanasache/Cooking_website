@@ -184,12 +184,16 @@ aside>a:hover {
 
 .click-span {
     color: rgb(87, 0, 13);
+    transform: rotate(0deg);
+    display: inline-block;
 }
 
 .click-span:hover {
     color: rgb(5, 10, 160);
     font-weight: bold;
     text-decoration: underline;
+    transform: rotate(-10deg);
+    transition: transform 1s, color 1.5s;
 }
 
 table {

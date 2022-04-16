@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<retete
-xmlns="https://www.w3schools.com"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="validare-retete.xsd">
+<retete xmlns="urn:Test.Namespace"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="urn:Test.Namespace validare-retete.xsd">
     <reteta id="1">
         <nume>Orez blana bomba</nume>
         <timp>1 ora si 30 minute</timp>
