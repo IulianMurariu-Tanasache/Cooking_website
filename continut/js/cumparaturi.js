@@ -75,6 +75,7 @@ function set_cumparaturi(){
         n = parseInt(n);
     }
 
+    console.log("Cate produse " + n)
     for(let i = 0; i < n; ++i){
         let produs = JSON.parse(localStorage.getItem("" + i));
         console.log(produs);
@@ -109,7 +110,7 @@ function sterge_cumparatura(){
     }
     let id = parseInt(document.getElementById("id-produs").value);
     if(id < n && n > 0){
-        for(i = 0; i < n; ++i){
+        for(i = id; i < n; ++i){
             if(id == i){
                 localStorage.removeItem(i);
                 continue;

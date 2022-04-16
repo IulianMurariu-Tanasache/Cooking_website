@@ -2,21 +2,23 @@
 <main>
     <div class="center-div">
         <aside>
-            <a href="#s1" >Sectiune 1: Info</a>
-            <a href="#s2" >Sectiune 2: Desen</a>
-            <a href="#s3" >Sectiune 3: TBD</a>
+            <a href="#s1" >Secțiune 1: Info</a>
+            <a href="#s2" >Secțiune 2: Desen</a>
+            <a href="#s3" >Secțiune 3: Tabel Dinamic</a>
         </aside>
-        <section id="s1" onload="onload_display_info()">
+        <section id="s1" onload="onload_display_info()" class="center-div">
+            <h3>Secțiunea 1</h3>
             <div class="fieldset-div">
                 <h1><span>Detalli furate din calculatorul tău</span></h1><br>
-                <p><b>Date: </b></p><p id="data-mea">dadada</p><br>
+                <p><b>Date: </b></p><p id="data-mea">Sper sa mearga</p><br>
                 <p><b>Where: </b></p><p id="locatia-mea"></p><br>
                 <p><b>Path: </b></p><p id="url-meu"></p><br>
                 <p><b>Browser: </b></p><p id="browser-nume"></p><br>
                 <p><b>OS: </b></p><p id="os-meu"></p>
             </div>
         </section>
-        <section id="s2">
+        <section id="s2" class="center-div">
+            <h3>Secțiunea 2</h3>
             <label for="Border color">Select border color:</label>
             <input type="color" id="Border-color" name="Border color" value="#ff0000">
             <br>
@@ -25,6 +27,44 @@
             <br>
             <canvas id="canvas-sec2" width=400 height=400 onclick="onclick_canvas(event)">
             </canvas>
+        </section>
+        <section id="s3" class="center-div">
+            <h3>Secțiunea 3</h3>
+            <form>
+                <fieldset>
+                    <legend>Modificare tabel dinamic</legend>
+                    <label>Pozitie: </label>
+                    <input type="number" id="pozitie" name="pozitie">
+                    <label>Culoare: </label>
+                    <input type="color" id="color-table" name="color-table" value="#ffffff"><br>
+                    <button type="button" onclick="insert_column()">Adaugă coloană</button>
+                    <button type="button" onclick="insert_row()">Adaugă rând</button>
+                </fieldset>
+            </form>
+            <table id="s3-table">
+                <tr>
+                    <th>
+                        Prima coloană
+                    </th>
+                    <th>
+                        A doua coloană
+                    </th>
+                    <th>
+                        A treia coloană
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        Prima coloană
+                    </td>
+                    <td>
+                        A doua coloană
+                    </td>
+                    <td>
+                        A treia coloană
+                    </td>
+                </tr>
+            </table>
         </section>
     </div>
 </main>

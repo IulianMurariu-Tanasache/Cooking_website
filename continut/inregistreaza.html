@@ -34,7 +34,7 @@
                     <input type="tel" id="tel" name="tel" pattern="07[0-9]{2}\.[0-9]{6}">
                     </div>
                 </fieldset>
-                <fieldset>
+                <fieldset id="2-fieldset">
                     <legend>Informații personale:</legend>
                     <label for="camin">Stai la cămin?:</label>
                     <select name="camin" id="camin">
@@ -64,7 +64,7 @@
                     <textarea id="comm" name="com" rows="4" cols="50">Acesta este site-ul meu preferat.</textarea><br><br>
                 </fieldset>
             </div>
-            <input id="inregInput" type="submit" value="Înregistrează">
+            <button id="inregInput" type="button" onclick="inregistreaza()">Înregistrează</button>
         </form>
         </div>
 </main>

@@ -6,8 +6,9 @@ import socket
 import os
 from urllib import response
 import select
+import json
 
-root_dir = 'F:\AnuIII\PW\proiect-1-IulianMurariu-Tanasache\continut'
+root_dir = 'F:\\AnuIII\\PW\\proiect-1-IulianMurariu-Tanasache\\continut'
 raspuns_http = ""
 
 dict_resp_code = {
@@ -70,7 +71,7 @@ def handle_client(client):
     clientsocket = client.conn
     cerere = ''
     linieDeStart = ''
-    data = clientsocket.recv(1024)
+    data = clientsocket.recv(8000)
     cerere = cerere + data.decode()
     pozitie = cerere.find('\r\n')
     if (pozitie > -1):
@@ -91,11 +92,11 @@ def handle_client(client):
         dir_name = root_dir
         if '.css' in file_name:
             dir_name += '\\css'
-        if '.js' in file_name:
-            dir_name += '\\js'
-        if '.xml' in  file_name:
+        elif '.xml' in  file_name or '.json' in  file_name:
             dir_name += '\\resurse'
-        if '.jpg' in file_name or '.png' in file_name:
+        elif '.js' in file_name:
+            dir_name += '\\js'
+        elif '.jpg' in file_name or '.png' in file_name:
             dir_name += '\\imagini'
         for file in os.listdir(dir_name):
             if file == file_name:
@@ -111,10 +112,20 @@ def handle_client(client):
             gzip_use = gzip_use and tip in ['css', 'html', 'js']
             raspuns_http = asamblare_raspuns(200, content, tip, gzip_accepted=gzip_use)
             print('raspuns: ' + raspuns_http)
-    # TODO trimiterea răspunsului HTTP
+        # TODO trimiterea răspunsului HTTP
         clientsocket.sendall(bytes(raspuns_http, encoding='utf-8'))
         if find_file:
             clientsocket.sendall(content)
+    if 'POST' in linieDeStart:
+        json_lista = cerere[cerere.rfind('\r\n') + 2:]
+        file_name = linieDeStart.split()[1][1:]
+        print(file_name)
+        if file_name == 'utilizatori.json':
+            with open(root_dir + '\\resurse\\utilizatori.json', 'w') as f:
+                f.write(json_lista)
+                print(json_lista)
+        raspuns_http = asamblare_raspuns(200, b'', 'text', gzip_accepted=False)
+        clientsocket.sendall(bytes(raspuns_http, encoding='utf-8'))
     client.conn.close()
 
 def listen(server_on, list_clienti, serversocket):
