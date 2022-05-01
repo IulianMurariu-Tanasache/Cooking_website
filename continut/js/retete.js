@@ -56,6 +56,7 @@ function incarcaRetete(){
                         {
                             let li = document.createElement('li');
                             li.innerText = item.getElementsByTagName('nume')[0].innerHTML + " - " + item.getElementsByTagName('cantitate')[0].innerHTML;
+                            li.style.textAlign = "left";
                             lista.appendChild(li);
                         }
                         td4.appendChild(lista);
@@ -64,6 +65,7 @@ function incarcaRetete(){
                         let td5 = document.createElement('td');
                         td5.innerHTML = reteta.getElementsByTagName('preparare')[0].innerHTML;
                         td5.style = "width: 600px";
+                        td5.style.textAlign = "justified";
                         currentRow.appendChild(td5);
                         
                         console.log(td5);

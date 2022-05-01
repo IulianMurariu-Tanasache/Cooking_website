@@ -29,7 +29,9 @@ tipuriMedia = {
 			'ico': 'image/x-icon',
 			'xml': 'application/xml; charset=utf-8',
 			'json': 'application/json; charset=utf-8',
-            'text': 'text/text'
+            'text': 'text/text',
+            'ttf': 'font/ttf',
+            'woff': 'font/woff'
 		}
 
 class Client:
@@ -92,12 +94,13 @@ def handle_client(client):
         dir_name = root_dir
         if '.css' in file_name:
             dir_name += '\\css'
-        elif '.xml' in  file_name or '.json' in  file_name:
+        elif '.xml' in  file_name or '.json' in  file_name or '.ttf' in file_name or '.woff' in file_name:
             dir_name += '\\resurse'
         elif '.js' in file_name:
             dir_name += '\\js'
         elif '.jpg' in file_name or '.png' in file_name:
             dir_name += '\\imagini'
+        #elif '.ttf' in file_name or '.woff' in file_name:
         for file in os.listdir(dir_name):
             if file == file_name:
                 find_file = True

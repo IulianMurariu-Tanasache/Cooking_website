@@ -2,9 +2,9 @@
 <main>
     <div class="center-div">
         <aside>
-            <a href="#s1" >Secțiune 1: Info</a>
-            <a href="#s2" >Secțiune 2: Desen</a>
-            <a href="#s3" >Secțiune 3: Tabel Dinamic</a>
+            <a href="#s1" class="aside-button">Secțiune 1: Info</a>
+            <a href="#s2" class="aside-button">Secțiune 2: Desen</a>
+            <a href="#s3" class="aside-button">Secțiune 3: Tabel Dinamic</a>
         </aside>
         <section id="s1" onload="onload_display_info()" class="center-div">
             <h3>Secțiunea 1</h3>
@@ -19,12 +19,12 @@
         </section>
         <section id="s2" class="center-div">
             <h3>Secțiunea 2</h3>
-            <label for="Border color">Select border color:</label>
-            <input type="color" id="Border-color" name="Border color" value="#ff0000">
-            <br>
-            <label for="Fill color">Select fill color:</label>
-            <input type="color" id="Fill-color" name="Fill color" value="#ff0000">
-            <br>
+            <div>
+                <label for="Border color">Select border color:</label>
+                <input type="color" id="Border-color" name="Border color" value="#ff0000">
+                <label for="Fill color">Select fill color:</label>
+                <input type="color" id="Fill-color" name="Fill color" value="#ff0000">
+            </div>
             <canvas id="canvas-sec2" width=400 height=400 onclick="onclick_canvas(event)">
             </canvas>
         </section>

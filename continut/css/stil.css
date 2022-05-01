@@ -1,5 +1,14 @@
+@font-face {
+    font-family: 'Smecher_Regular';
+    src: url('Bitter-VariableFont_wght.ttf') format('truetype'),
+         url('Bitter-VariableFont_wght.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     background-color:cornsilk;
+    font-family: 'Smecher_Regular';
 }
 
 nav {
@@ -34,6 +43,7 @@ nav {
         color: blue;
         text-decoration: underline;
         font-weight: bold;
+        cursor: pointer;
     }
 }
 
@@ -65,7 +75,7 @@ nav {
     display: flex;
 }
 
-form>label, .center-div>label {
+form>label, .center-div>label, section>div>label {
     font-weight: bolder;
     font-size: larger;
 }
@@ -135,7 +145,7 @@ aside>a {
 aside>a:hover {
     background-color: rgb(249, 246, 191);
     color: rgb(54, 6, 117);
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 
 #canvas-sec2 {
@@ -231,4 +241,27 @@ td {
     animation-name: move-chopstick;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+}
+
+section {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+}
+
+.linie-div {
+    border-top: solid gray 2px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+#verifButton {
+    font-size: 110%;
+    width: fit-content;
+    height: fit-content;
+}
+
+#logare * {
+    margin-top: 2px;
+    margin-bottom: 2px;
 }

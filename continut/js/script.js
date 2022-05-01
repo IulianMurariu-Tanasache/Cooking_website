@@ -7,6 +7,26 @@ function onload_display_info() {
     document.getElementById("url-meu").innerHTML = url;
     document.getElementById("browser-nume").innerHTML = window.navigator.userAgent;
     document.getElementById("os-meu").innerHTML = window.navigator.platform
+
+    var coll = document.getElementsByClassName("aside-button");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        var content_id = this.href.replace(/^[^#]*#/, "");
+        console.log(content_id);
+        var content = document.getElementById(content_id);
+        if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+              var sections = document.getElementsByTagName("section");
+              for (let s of sections) {
+                  s.style.maxHeight = null;
+              }
+            content.style.maxHeight = "100vh";
+          } 
+    });
+    }
 }
 
 function update_time() {
